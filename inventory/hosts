@@ -45,3 +45,6 @@
 [linuxservers]
 kmaster.rodriquez.local
 kworker1.rodriquez.local
+
+[templates]
+ubuntu-template.rodriquez.local
