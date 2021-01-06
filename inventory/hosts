@@ -45,13 +45,7 @@
 [linuxservers]
 kmaster.rodriquez.local
 kworker1.rodriquez.local
-<<<<<<< HEAD
 kworker2.rodriquez.local
 
 [templates]
 ubuntu-template.rodriquez.local
-=======
-
-[templates]
-ubuntu-template.rodriquez.local
->>>>>>> b009c368173312b63c2ebebc51a9cb05f222c5d7
