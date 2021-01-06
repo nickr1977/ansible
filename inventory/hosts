@@ -46,3 +46,6 @@
 kmaster.rodriquez.local
 kworker1.rodriquez.local
 kworker2.rodriquez.local
+
+[templates]
+ubuntu-template.rodriquez.local
