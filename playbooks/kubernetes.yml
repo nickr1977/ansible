@@ -1,0 +1,17 @@
+- hosts: "*"
+  become: yes
+  tasks:
+    - name: apt
+      apt:
+        update_cache: yes
+        upgrade: 'yes'
+
+- name: install curl
+  hosts: "*"
+  tasks:
+    - name: curl
+      apt:
+        name: net-tools
+        state: present
+        update_cache: true
+      become: true
