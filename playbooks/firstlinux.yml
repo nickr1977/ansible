@@ -6,6 +6,15 @@
         update_cache: yes
         upgrade: 'yes'
 
+- name: install network tools
+  hosts: "*"
+  tasks:
+    - name: install net-tools
+      apt:
+        name: net-tools
+        state: present
+        update_cache: true
+      become: true
 
 - name: install latest qemu-guest-agent
   hosts: "*"
@@ -17,15 +26,13 @@
         update_cache: true
       become: true
 
-- name: install the latest zshell on all hosts
-  hosts: "*"
-  tasks: 
-    - name: install zsh
-      apt:
-        name: zsh
-        state: present
-        update_cache: true
-      become: true
+# - name: install the latest zshell on all hosts
+#   - name: install zsh
+#     apt:
+#        name: zsh
+#        state: present
+#        update_cache: true
+#      become: true
 
 - name: Set timezone and configure timesyncd
   hosts: "*"
